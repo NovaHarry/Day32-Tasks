@@ -7,7 +7,7 @@ import * as yup from 'yup';
 import {useFormik} from 'formik';
 
 export const bookSchemaValidation = yup.object({
-    id: yup.string().required("Please enter the book ID"),
+    id: yup.string().required("Please enter the numerical book ID"),
     bookName: yup.string().required("Please enter the book name"),
     volume: yup.string().required("Please enter the book volume"),
     released: yup.string().required("Please enter the book released"),
